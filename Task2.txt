@@ -1,0 +1,20 @@
+SELECT
+    COUNT(*) AS total_tasks,
+    SUM(task_completed) AS completed_tasks,
+    task_assignee,
+    COUNT(task_assignee) AS tasks_assigned
+FROM
+    tasks
+GROUP BY
+    task_assignee;
+
+
+/*
+1.Setup Test Data
+2.Execute the Query
+3.Verify Results
+4.Compare with Expected Results
+5.Identify Faults
+6.Report Findings
+*/
+
